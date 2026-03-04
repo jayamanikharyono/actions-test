@@ -18,7 +18,7 @@ jobs:
 
       - name: Validate DAGs
         id: validate
-        uses: jayamanikharyono/airflow-dag-action@develop
+        uses: jayamanikharyono/airflow-dag-action@master
         with:
           requirementsFile: requirements.txt
           dagPaths: dags
@@ -50,7 +50,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Validate Negative DAGs
-        uses: jayamanikharyono/airflow-dag-action@develop
+        uses: jayamanikharyono/airflow-dag-action@master
         with:
           dagPaths: dags_negative
           accessToken: ${{ secrets.GITHUB_TOKEN }}
