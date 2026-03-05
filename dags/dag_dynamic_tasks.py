@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 REGIONS = ["us_east", "us_west", "eu_central", "ap_southeast"]
 
 default_args = {
-    "owner": "data-engineering",
+    "owner": "data-engineering-team",
     "retries": 1,
     "retry_delay": timedelta(minutes=2),
     "execution_timeout": timedelta(hours=1),

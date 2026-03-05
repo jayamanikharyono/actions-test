@@ -6,7 +6,7 @@ from airflow.operators.empty import EmptyOperator
 from datetime import datetime, timedelta
 
 default_args = {
-    "owner": "data-engineering",
+    "owner": "data-engineering-team",
     "retries": 2,
     "retry_delay": timedelta(minutes=5)
 }
