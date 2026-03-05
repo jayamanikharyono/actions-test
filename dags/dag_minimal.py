@@ -10,6 +10,6 @@ with DAG(
     start_date=datetime(2024, 1, 1),
     schedule_interval=None,
     default_args={"owner": "platform"},
-    description="Simplest valid Airflow 2 DAG - testing diffOnly",
+    description="Minimal valid Airflow 2 DAG for CI testing",
 ) as dag:
     EmptyOperator(task_id="noop")

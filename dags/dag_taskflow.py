@@ -11,7 +11,7 @@ from datetime import datetime
     catchup=False,
     default_args={"owner": "analytics"},
     tags=["taskflow", "etl"],
-    description="TaskFlow API ETL pipeline with @task decorators and XCom",
+    description="TaskFlow API ETL demonstrating extract-transform-load with XCom",
 )
 def taskflow_etl():
 
